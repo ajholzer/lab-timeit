@@ -87,8 +87,8 @@ Complete the following table with actual measured runtimes by substituting the v
 
 |                        | `xs=("1"*65536)`             | `xs=([1]*65536)` | `xs=deque([1]*65536)`                                           |
 | ---------------------- | ---------------------------- | ---------------- | ----------------------------------------------------------------|
-| `check_palindrome_1`   |100 loops 8.13 msec per loop             |`100 loops, 6.27 msec per loop`|100 loops best of 3 : 6.13 msec per loop |                       |
-| `check_palindrome_2`   |100 loops, best of 3: 5.08 msec per loop |100 loops  4.6 msec per loop   | 100 loops, best of 3: 5.8 msec per loop |
+| `check_palindrome_1`   |4.0                           | 3.9               |            56                                                  |
+| `check_palindrome_2`   |3.5                           |3.0               |                                 3.01                            |             
 
 You should observe that one of these entries is significantly slower than the others.
 This tells us that the runtime of a function depends on: (1) the algorithm that it is implemented with, and (2) the data types it is run on.
